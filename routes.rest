@@ -1,0 +1,54 @@
+GET http://localhost:3000/subscribers
+ 
+###
+
+GET http://localhost:3000/subscribers/639b7dad134069d778173c02
+
+###
+
+POST http://localhost:3000/testdb
+Content-Type: application/json  
+
+//to let know server know this is json that we send to it
+{
+     "name": "Cooper from Testdb", 
+        "email": "Nothing@gmail.com",
+        "age":  4,
+        "address": {
+        "pincode": 1233,
+        "street": "25th North",
+        "city": " New England"
+        }
+}
+
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Yonathan  222",
+    "subscribedTochannel": "HiTech Bnei Menashe"
+}
+
+
+
+
+
+
+###
+
+DELETE http://localhost:3000/subscribers/6399cf9879326a86932b94cd
+
+###
+PATCH  http://localhost:3000/subscribers/6399cf1b79326a86932b94c5
+Content-Type: application/json
+
+{
+    "name": "Yaakov Misao"
+ 
+
+}
+
+
+
+

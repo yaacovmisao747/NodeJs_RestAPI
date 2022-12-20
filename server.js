@@ -4,7 +4,11 @@ const express = require('express')
 const app = express()
 const mongoose = require('mongoose')
 
-mongoose.connect( process.env.irl, { useNewUrlParser: true })
+//to connect server with react npm install cors and use below
+// const cors = require("cors")  
+// app.use (cors())
+
+mongoose.connect(process.env.irl, { useNewUrlParser: true })
 
 // mongoose.set('strictQuery', true); 
 
@@ -12,7 +16,7 @@ const db = mongoose.connection
 db.on('error', (error) => console.error(error))
 db.once('open', () => console.log('Connected to Database'))
 
-app.use(express.json())  //allow us ro use middle ware
+app.use(express.json())  //allow us to use middle ware
 
 const  subscribersRouter = require('./routes/subscribers')
 app.use('/subscribers', subscribersRouter)  

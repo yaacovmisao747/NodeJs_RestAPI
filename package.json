@@ -1,10 +1,10 @@
 {
   "name": "project_node_js_mongodb",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "devStart": "nodemon server.js"
+    "devStart": "nodemon server.js",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -15,5 +15,14 @@
   "devDependencies": {
     "dotenv": "^16.0.3",
     "nodemon": "^2.0.20"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaacovmisao747/Node_JS_MongoDB_WebDev_Sim.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yaacovmisao747/Node_JS_MongoDB_WebDev_Sim/issues"
+  },
+  "homepage": "https://github.com/yaacovmisao747/Node_JS_MongoDB_WebDev_Sim#readme",
+  "description": ""
 }
